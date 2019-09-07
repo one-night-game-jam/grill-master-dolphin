@@ -49,7 +49,7 @@ MonoBehaviour:
   rb: {fileID: 3524260375402372700}
   speed: 100
   scaleRatio: 10
-  LifetimeSeconds: 0.3
+  LifetimeSeconds: 0.5
 --- !u!54 &3524260375402372700
 Rigidbody:
   m_ObjectHideFlags: 0

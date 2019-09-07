@@ -46,6 +46,7 @@ namespace Dolphins
         public void MakeHappy(float time)
         {
             HappyTime = Mathf.Max(0, HappyTime) + time;
+            PastTime -= 10f;
             Debug.Log($"Happy time {HappyTime}");
         }
 
