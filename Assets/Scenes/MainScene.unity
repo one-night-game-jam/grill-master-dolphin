@@ -171,15 +171,15 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats: []
     m_Colors: []
---- !u!21 &132241255
+--- !u!21 &219888176
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Posteffects/Sonar
-  m_Shader: {fileID: 4800000, guid: c21b457ad51f995438c922df0b5de20a, type: 3}
+  m_Name: Posteffects/Happiness Aberration
+  m_Shader: {fileID: 4800000, guid: c638d36bc1392e44ba6765832c75afa1, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -194,8 +194,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _SonarRadius: Infinity
+    m_Floats: []
     m_Colors: []
 --- !u!1 &705507993
 GameObject:
@@ -270,7 +269,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 1.0273856e+11}
+  m_BoundingSphereOverride: {x: 3, y: 0, z: 1, w: 0.86602545}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -300,31 +299,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9f90182fc9814441bad50edd0e2ede5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!21 &1033169141
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Posteffects/Happiness Aberration
-  m_Shader: {fileID: 4800000, guid: c638d36bc1392e44ba6765832c75afa1, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors: []
 --- !u!1 &1596876896
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,6 +430,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &2062209709
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Posteffects/Sonar
+  m_Shader: {fileID: 4800000, guid: c21b457ad51f995438c922df0b5de20a, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _SonarRadius: Infinity
+    m_Colors: []
 --- !u!1001 &4762356400188428698
 PrefabInstance:
   m_ObjectHideFlags: 0
