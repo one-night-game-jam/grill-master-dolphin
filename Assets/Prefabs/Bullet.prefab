@@ -47,10 +47,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 3524260375402372700}
-  collisionTransform: {fileID: 3012426882881707788}
-  speed: 20
-  scaleRatio: 1.1
-  LifetimeSeconds: 5
+  speed: 100
+  scaleRatio: 10
+  LifetimeSeconds: 0.3
 --- !u!54 &3524260375402372700
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -127,7 +126,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8741934942537669079}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
