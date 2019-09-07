@@ -181,10 +181,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   input: {fileID: 8512453272834419655}
-  defaultSpeed: 100
-  defaultRotateSpeed: 50
-  happySpeed: 500
-  happyRotateSpeed: 100
+  defaultSpeed: 20
+  defaultRotateSpeed: 180
+  happySpeed: 50
+  happyRotateSpeed: 360
 --- !u!114 &8512453272834419655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -249,16 +249,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4735032885190689581}
     m_Modifications:
-    - target: {fileID: 9153146923820611914, guid: a1d4cf63edde24c168eae5549cd6e66f,
-        type: 3}
-      propertyPath: m_Name
-      value: GrillMaster
-      objectReference: {fileID: 0}
-    - target: {fileID: 9153146923820611914, guid: a1d4cf63edde24c168eae5549cd6e66f,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 5286622851764292441, guid: a1d4cf63edde24c168eae5549cd6e66f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -313,6 +303,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9153146923820611914, guid: a1d4cf63edde24c168eae5549cd6e66f,
+        type: 3}
+      propertyPath: m_Name
+      value: GrillMaster
+      objectReference: {fileID: 0}
+    - target: {fileID: 9153146923820611914, guid: a1d4cf63edde24c168eae5549cd6e66f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1d4cf63edde24c168eae5549cd6e66f, type: 3}
