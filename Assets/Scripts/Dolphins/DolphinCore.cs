@@ -19,8 +19,8 @@ namespace Dolphins
         [SerializeField]
         float happyRotateSpeed;
 
-        float happyTime;
-        bool IsHappy => happyTime > 0;
+        public float HappyTime { get; private set; }
+        bool IsHappy => HappyTime > 0;
 
         long score;
 
@@ -34,8 +34,8 @@ namespace Dolphins
 
         public void MakeHappy(float time)
         {
-            happyTime = Mathf.Max(0, happyTime) + time;
-            Debug.Log($"Happy time {happyTime}");
+            HappyTime = Mathf.Max(0, HappyTime) + time;
+            Debug.Log($"Happy time {HappyTime}");
         }
 
         public void AddScore(long score)
@@ -46,7 +46,7 @@ namespace Dolphins
 
         void Update()
         {
-            happyTime -= Time.deltaTime;
+            HappyTime -= Time.deltaTime;
         }
 
         void OnTriggerEnter(Collider other)
