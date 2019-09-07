@@ -1,5 +1,4 @@
-﻿using System;
-using Dolphins;
+﻿using Dolphins;
 using UniRx;
 using UnityEngine;
 
@@ -10,6 +9,8 @@ namespace Fishes
         [SerializeField]
         DolphinCore dolphinCore;
 
+        public DolphinCore DolphinCore => dolphinCore;
+
         void Start()
         {
             dolphinCore.Sonar
@@ -19,7 +20,7 @@ namespace Fishes
 
         void OnSonar()
         {
-            
+
         }
     }
 }

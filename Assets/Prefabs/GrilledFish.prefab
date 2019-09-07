@@ -88,6 +88,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4664756709854322662}
   - component: {fileID: 5561298883919299311}
+  - component: {fileID: 5577780199971880419}
   m_Layer: 10
   m_Name: GrilledFish
   m_TagString: Untagged
@@ -124,6 +125,20 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: -0.5}
+--- !u!114 &5577780199971880419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3796311001454409343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d6805cf673ee46a9921e9c6caeec1e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 100
+  speed: 5
 --- !u!1 &4103173879369227915
 GameObject:
   m_ObjectHideFlags: 0

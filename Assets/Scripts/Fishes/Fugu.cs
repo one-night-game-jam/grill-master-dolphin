@@ -3,15 +3,15 @@ using UnityEngine;
 
 namespace Fishes
 {
-    public class Fugu : MonoBehaviour
+    public class Fugu : MonoBehaviour, IDolphinTouchable
     {
         [SerializeField]
         float happyTime;
 
-        void OnTriggerEnter(Collider other)
+        public void Touch(DolphinCore dolphinCore)
         {
-            var dolphinCore = other.GetComponent<DolphinCore>();
-            if (dolphinCore != null) dolphinCore.MakeHappy(happyTime);
+            dolphinCore.MakeHappy(happyTime);
+            Destroy(gameObject);
         }
     }
 }
