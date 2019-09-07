@@ -16,6 +16,8 @@ namespace Common
 
         void Start()
         {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             ClickAndLoadSceneAsync().Forget();
         }
 
