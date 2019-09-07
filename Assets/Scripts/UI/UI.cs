@@ -1,5 +1,6 @@
 ﻿using System;
 using Dolphins;
+using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,15 +12,36 @@ namespace UI
         DolphinCore dolphinCore;
 
         [SerializeField]
-        Text time;
+        GameObject playingUIRoot;
+        [SerializeField]
+        GameObject resultUIRoot;
 
         [SerializeField]
-        Text score;
+        Text time;
+        [SerializeField]
+        Text[] scores;
+
+        void Start()
+        {
+            dolphinCore.IsTimeUp
+                .Select(b => !b)
+                .Subscribe(SwitchUI)
+                .AddTo(this);
+        }
+
+        void SwitchUI(bool playing)
+        {
+            playingUIRoot.SetActive(playing);
+            resultUIRoot.SetActive(!playing);
+        }
 
         void Update()
         {
             time.text = TimeSpan.FromSeconds(dolphinCore.LastTime).ToString(@"mm\:ss\.ff");
-            score.text = dolphinCore.Score.ToString();
+            foreach (var score in scores)
+            {
+                score.text = dolphinCore.Score.ToString();
+            }
         }
     }
 }
