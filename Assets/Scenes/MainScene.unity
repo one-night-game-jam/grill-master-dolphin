@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571334, b: 0.3069219, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -221,6 +221,41 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c9f90182fc9814441bad50edd0e2ede5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1429982098 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 963194225, guid: 5743635cf022b488a858ec3b8f79f6e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 5021900355495421220}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1429982100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429982098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43695393b606a1241ac42c99a4027b21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dolphin: {fileID: 969737805}
+  sonarWidth: 100
+  sonarSpeed: 150
+  sonarColor: {r: 1, g: 0.3537736, b: 0.6794296, a: 1}
+  sonarEffectiveRadius: 300
+--- !u!114 &1429982103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429982098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb219b23cdf4b314f94a27bca3cc8012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1596876896
