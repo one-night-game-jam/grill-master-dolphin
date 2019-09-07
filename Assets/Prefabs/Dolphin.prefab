@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2224411856270025}
   - component: {fileID: 6048626502634528549}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -144,7 +144,7 @@ GameObject:
   - component: {fileID: 1401846610543465571}
   - component: {fileID: 1223209484652805861}
   - component: {fileID: 4087873393156199460}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Dolphin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -253,6 +253,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GrillMaster
+      objectReference: {fileID: 0}
+    - target: {fileID: 9153146923820611914, guid: a1d4cf63edde24c168eae5549cd6e66f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5286622851764292441, guid: a1d4cf63edde24c168eae5549cd6e66f,
         type: 3}

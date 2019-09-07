@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2181338075667376893}
   - component: {fileID: 3856232208225013203}
   - component: {fileID: 3279143490441214766}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,7 +57,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3a0839a220b691541ac45b62bbb64da8, type: 2}
+  - {fileID: 2100000, guid: 099c52e6b47d647caa60a11c34109b6e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -87,10 +87,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4664756709854322662}
-  - component: {fileID: 4747739892660779896}
   - component: {fileID: 5561298883919299311}
-  m_Layer: 9
-  m_Name: Fish
+  m_Layer: 10
+  m_Name: GrilledFish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -111,20 +110,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4747739892660779896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3796311001454409343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83d87b3b4ab464c709c1de135a32b77e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  grilledPrefab: {fileID: 3796311001454409343, guid: 86a18924751814060813ea9443c0e225,
-    type: 3}
 --- !u!136 &5561298883919299311
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -150,7 +135,7 @@ GameObject:
   - component: {fileID: 3348196663347942677}
   - component: {fileID: 465290284467101647}
   - component: {fileID: 8936042862107863307}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Tail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,7 +181,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3a0839a220b691541ac45b62bbb64da8, type: 2}
+  - {fileID: 2100000, guid: 099c52e6b47d647caa60a11c34109b6e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -226,7 +211,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7440604964649534392}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Waist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -257,7 +242,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7703723322419199647}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Root
   m_TagString: Untagged
   m_Icon: {fileID: 0}

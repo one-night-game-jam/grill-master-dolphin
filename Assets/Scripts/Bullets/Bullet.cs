@@ -1,4 +1,5 @@
-﻿using UniRx;
+﻿using Fishes;
+using UniRx;
 using UniRx.Triggers;
 using UnityEngine;
 
@@ -8,8 +9,6 @@ namespace Bullets
     {
         [SerializeField]
         Rigidbody rb;
-        [SerializeField]
-        Transform collisionTransform;
 
         [SerializeField]
         float speed;
@@ -25,10 +24,16 @@ namespace Bullets
                 .Subscribe(_ => rb.MovePosition(rb.transform.position += rb.transform.forward * speed * Time.deltaTime))
                 .AddTo(this);
             this.UpdateAsObservable()
-                .Subscribe(_ => collisionTransform.localScale += Vector3.one * scaleRatio * Time.deltaTime)
+                .Subscribe(_ => transform.localScale += Vector3.one * scaleRatio * Time.deltaTime)
                 .AddTo(this);
 
             Destroy(gameObject, LifetimeSeconds);
+        }
+
+        void OnTriggerEnter(Collider other)
+        {
+            var fish = other.GetComponent<FishCore>();
+            if (fish != null) fish.Burn();
         }
     }
 }
