@@ -34,14 +34,10 @@ namespace Dolphins
             rb.MovePosition(rb.position + deltaPosition);
         }
 
-        float eulerX;
-        float eulerY;
         void Aim(Vector2 delta)
         {
             delta *= core.RotateSpeed * Time.deltaTime;
-            eulerX += delta.y;
-            eulerY += delta.x;
-            rb.MoveRotation(Quaternion.Euler(eulerX, eulerY, 0));
+            rb.MoveRotation(rb.rotation * Quaternion.Euler(delta.y, delta.x, 0));
         }
     }
 }
