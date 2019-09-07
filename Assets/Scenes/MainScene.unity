@@ -211,6 +211,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!21 &918452693
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Posteffects/Sonar
+  m_Shader: {fileID: 4800000, guid: c21b457ad51f995438c922df0b5de20a, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _SonarRadius: Infinity
+    m_Colors: []
 --- !u!114 &969737805 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4399189318239378349, guid: 5743635cf022b488a858ec3b8f79f6e7,
@@ -300,10 +326,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fishPrefab: {fileID: 299971350097498827, guid: dcd5cc62ab33e451694efaa8be06ff09,
     type: 3}
-  initialFishCount: 30
+  initialFishCount: 60
   fuguPrefab: {fileID: 7030349635387048697, guid: 2cd5d8755c1364b14adc61008a06a8ea,
     type: 3}
-  initialFuguCount: 5
+  initialFuguCount: 10
   spawnAreaRadius: 100
   environmentObserver: {fileID: 1596876897}
 --- !u!1 &1683350857
@@ -373,6 +399,31 @@ Transform:
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!21 &1918533643
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Posteffects/Happiness Aberration
+  m_Shader: {fileID: 4800000, guid: c638d36bc1392e44ba6765832c75afa1, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors: []
+--- !u!21 &1927599067
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
