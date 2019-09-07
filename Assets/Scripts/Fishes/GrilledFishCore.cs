@@ -3,14 +3,14 @@ using UnityEngine;
 
 namespace Fishes
 {
-    public class Fugu : MonoBehaviour, IDolphinTouchable
+    public class GrilledFishCore : MonoBehaviour, IDolphinTouchable
     {
         [SerializeField]
-        float happyTime;
+        long score;
 
         public void Touch(DolphinCore dolphinCore)
         {
-            dolphinCore.MakeHappy(happyTime);
+            dolphinCore.AddScore(score);
             Destroy(gameObject);
         }
     }
