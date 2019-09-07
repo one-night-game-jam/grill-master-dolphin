@@ -23,7 +23,7 @@ namespace UI
 
         void Start()
         {
-            dolphinCore.IsTimeUp
+            dolphinCore.IsTimeUpAsObservable
                 .Select(b => !b)
                 .Subscribe(SwitchUI)
                 .AddTo(this);
