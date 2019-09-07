@@ -20,6 +20,9 @@ namespace Dolphins
         [SerializeField]
         float happyRotateSpeed;
 
+        [SerializeField]
+        float sonarCooldownTime;
+
         public float HappyTime { get; private set; }
         bool IsHappy => HappyTime > 0;
 
@@ -30,7 +33,10 @@ namespace Dolphins
         public IObservable<bool> IsTimeUp => this.ObserveEveryValueChanged(x => PlayTime < x.PastTime);
 
         public IObservable<bool> Fire => input.Fire.CombineLatest(IsTimeUp, (fire, isTimeUp) => fire && !isTimeUp);
-        public IReadOnlyReactiveProperty<bool> Sonar => input.Sonar;
+        public IObservable<Unit> Sonar => input.Sonar
+            .Where(b => b)
+            .ThrottleFirst(TimeSpan.FromSeconds(sonarCooldownTime))
+            .AsUnitObservable();
         public IReadOnlyReactiveProperty<Vector2> Move => input.Move;
         public IReadOnlyReactiveProperty<Vector2> Aim => input.Aim;
 
