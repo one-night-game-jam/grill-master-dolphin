@@ -27,7 +27,7 @@ namespace Dolphins
         bool IsHappy => HappyTime > 0;
 
         public long Score { get; private set; }
-        public const float PlayTime = 30;
+        public const float PlayTime = 60;
         public float PastTime { get; private set; }
         public float LastTime => PlayTime - PastTime;
         public IObservable<bool> IsTimeUp => this.ObserveEveryValueChanged(x => PlayTime < x.PastTime);
