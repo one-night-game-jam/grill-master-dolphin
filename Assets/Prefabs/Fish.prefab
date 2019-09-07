@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83d87b3b4ab464c709c1de135a32b77e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grilledPrefab: {fileID: 3796311001454409343, guid: 86a18924751814060813ea9443c0e225,
+  grilledPrefab: {fileID: 5577780199971880419, guid: 86a18924751814060813ea9443c0e225,
     type: 3}
 --- !u!136 &5561298883919299311
 CapsuleCollider:

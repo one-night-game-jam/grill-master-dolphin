@@ -193,8 +193,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 4.354398e-38, y: 5.3421577e-12, z: -5.3731502e+11,
-    w: NaN}
+  m_BoundingSphereOverride: {x: 1e-45, y: 9.23e-43, z: 0, w: 54198270}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -235,7 +234,6 @@ GameObject:
   - component: {fileID: 1596876898}
   - component: {fileID: 1596876897}
   - component: {fileID: 1596876899}
-  - component: {fileID: 1596876900}
   m_Layer: 0
   m_Name: Fishes
   m_TagString: Untagged
@@ -282,26 +280,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f061bebecebdf4585a52da7476396a5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fishPrefab: {fileID: 3796311001454409343, guid: 01a844201cd19b340a749dd338dc7aa2,
+  fishPrefab: {fileID: 4747739892660779896, guid: 01a844201cd19b340a749dd338dc7aa2,
     type: 3}
   initialFishCount: 30
-  spawnAreaRadius: 100
---- !u!114 &1596876900
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1596876896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f061bebecebdf4585a52da7476396a5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fishPrefab: {fileID: 5682862361153334879, guid: a2590946489084cd0bbc4d6e48c1e6bd,
+  fuguPrefab: {fileID: 5682862361153334873, guid: a2590946489084cd0bbc4d6e48c1e6bd,
     type: 3}
-  initialFishCount: 5
+  initialFuguCount: 5
   spawnAreaRadius: 100
+  environmentObserver: {fileID: 1596876897}
 --- !u!1001 &5021900355495421220
 PrefabInstance:
   m_ObjectHideFlags: 0
