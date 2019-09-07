@@ -8,9 +8,10 @@ namespace Dolphins
     {
         [SerializeField]
         DolphinCore core;
-
         [SerializeField]
         Rigidbody rb;
+        [SerializeField]
+        Transform modelRoot;
 
         void Start()
         {
@@ -28,6 +29,8 @@ namespace Dolphins
         {
             delta *= core.Speed * Time.deltaTime;
             var deltaPosition = delta.y * rb.transform.forward + delta.x * rb.transform.right;
+            if (deltaPosition.sqrMagnitude > float.Epsilon)
+                modelRoot.LookAt(modelRoot.position + deltaPosition);
             rb.MovePosition(rb.position + deltaPosition);
         }
 
