@@ -17,6 +17,9 @@ namespace Dolphins
 
         void Awake()
         {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+
             this.ObserveEveryValueChanged(_ => Input.GetButton("Fire1"))
                 .Subscribe(x => fire.Value = x)
                 .AddTo(this);
