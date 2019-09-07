@@ -5,6 +5,9 @@ using UniRx;
 [ExecuteInEditMode]
 public class Sonar : MonoBehaviour
 {
+    [SerializeField, HideInInspector]
+    Material material = null;
+
     [SerializeField]
     Dolphins.DolphinCore dolphin = null;
 
@@ -23,12 +26,15 @@ public class Sonar : MonoBehaviour
     float sonarStartTime = 0;
     Vector3 sonarCenter = Vector3.zero;
 
-    Material material = null;
-
     public void BeginSonar(Vector3 center)
     {
         sonarStartTime = Time.time;
         sonarCenter = center;
+    }
+
+    void OnValidate()
+    {
+        material = new Material(Shader.Find("Posteffects/Sonar"));
     }
 
     void Awake()
@@ -40,11 +46,6 @@ public class Sonar : MonoBehaviour
 
     void OnRenderImage(RenderTexture source, RenderTexture destination)
     {
-        if (material == null)
-        {
-            material = new Material(Shader.Find("Posteffects/Sonar"));
-        }
-
         float elapsedTime = Time.time - sonarStartTime;
         float sonarRadius = elapsedTime * sonarSpeed;
         material.SetFloat("_SonarRadius", sonarRadius);
