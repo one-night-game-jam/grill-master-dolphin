@@ -41,7 +41,7 @@ public class Sonar : MonoBehaviour
     {
         sonarStartTime = float.MinValue;
 
-        dolphin.Sonar.Where(x => x).Subscribe(_ => BeginSonar(dolphin.transform.position)).AddTo(this);
+        dolphin.Sonar.Subscribe(_ => BeginSonar(dolphin.transform.position)).AddTo(this);
     }
 
     void OnRenderImage(RenderTexture source, RenderTexture destination)
