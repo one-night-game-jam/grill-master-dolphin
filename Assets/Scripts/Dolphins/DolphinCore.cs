@@ -1,4 +1,5 @@
-﻿using UniRx;
+﻿using Fishes;
+using UniRx;
 using UnityEngine;
 
 namespace Dolphins
@@ -32,11 +33,18 @@ namespace Dolphins
         public void MakeHappy(float time)
         {
             happyTime = Mathf.Max(0, happyTime) + time;
+            Debug.Log($"Happy time {happyTime}");
         }
 
         void Update()
         {
             happyTime -= Time.deltaTime;
+        }
+
+        void OnTriggerEnter(Collider other)
+        {
+            var touchable = other.GetComponent<IDolphinTouchable>();
+            touchable?.Touch(this);
         }
     }
 }
