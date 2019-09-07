@@ -11,8 +11,10 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 4762155385724417785}
   - component: {fileID: 7082210795872487350}
   - component: {fileID: 2727204451910589548}
+  - component: {fileID: 2089902122021428909}
   m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -85,6 +87,23 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
+--- !u!114 &4762155385724417785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99ed6b2c275d6b84a98ff8309bcaf2bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 0}
+  fogGamma: 2
+  farDistance: 50
+  depthFogColor: {r: 0, g: 0.03596006, b: 0.086, a: 1}
+  heightFogColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &7082210795872487350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,6 +136,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aberration: {fileID: 0}
   dolphin: {fileID: 4399189318239378349}
+--- !u!114 &2089902122021428909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb219b23cdf4b314f94a27bca3cc8012, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6611489045969426694
 GameObject:
   m_ObjectHideFlags: 0

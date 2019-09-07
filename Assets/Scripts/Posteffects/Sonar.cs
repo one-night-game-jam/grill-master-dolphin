@@ -44,6 +44,7 @@ public class Sonar : MonoBehaviour
         dolphin.Sonar.Subscribe(_ => BeginSonar(dolphin.transform.position)).AddTo(this);
     }
 
+    [ImageEffectOpaque]
     void OnRenderImage(RenderTexture source, RenderTexture destination)
     {
         float elapsedTime = Time.time - sonarStartTime;
