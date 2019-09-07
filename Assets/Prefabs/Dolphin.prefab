@@ -186,6 +186,8 @@ GameObject:
   - component: {fileID: 4735032885190689581}
   - component: {fileID: 4399189318239378349}
   - component: {fileID: 8512453272834419655}
+  - component: {fileID: 1401846610543465571}
+  - component: {fileID: 1223209484652805861}
   m_Layer: 0
   m_Name: Dolphin
   m_TagString: Untagged
@@ -222,6 +224,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   input: {fileID: 8512453272834419655}
+  defaultSpeed: 100
+  defaultRotateSpeed: 50
 --- !u!114 &8512453272834419655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,6 +238,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d55e17eadba6b4d8090479879018d952, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1401846610543465571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7394743391809563834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0393a90e8cb3c4cb68ac0b0d3cb5e2a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  core: {fileID: 4399189318239378349}
+  rb: {fileID: 1223209484652805861}
+--- !u!54 &1223209484652805861
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7394743391809563834}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 1
+  m_Constraints: 0
+  m_CollisionDetection: 3
 --- !u!1 &8946454463412609004
 GameObject:
   m_ObjectHideFlags: 0
