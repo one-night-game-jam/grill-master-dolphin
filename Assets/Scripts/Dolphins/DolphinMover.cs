@@ -29,9 +29,10 @@ namespace Dolphins
         {
             delta *= core.Speed * Time.deltaTime;
             var deltaPosition = delta.y * rb.transform.forward + delta.x * rb.transform.right;
-            if (deltaPosition.sqrMagnitude > float.Epsilon)
-                modelRoot.LookAt(modelRoot.position + deltaPosition);
-            rb.MovePosition(rb.position + deltaPosition);
+            var targetPosition = rb.position + deltaPosition;
+            rb.MovePosition(targetPosition);
+
+            modelRoot.localRotation = Quaternion.LookRotation(new Vector3(delta.x, 0, delta.y));
         }
 
         void Aim(Vector2 delta)
