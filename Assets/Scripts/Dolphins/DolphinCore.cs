@@ -1,4 +1,5 @@
-﻿using Fishes;
+﻿using System;
+using Fishes;
 using UniRx;
 using UnityEngine;
 
@@ -22,9 +23,13 @@ namespace Dolphins
         public float HappyTime { get; private set; }
         bool IsHappy => HappyTime > 0;
 
-        long score;
+        public long Score { get; private set; }
+        public const float PlayTime = 30;
+        public float PastTime { get; private set; }
+        public float LastTime => PlayTime - PastTime;
+        public IObservable<bool> IsTimeUp => this.ObserveEveryValueChanged(x => PlayTime < x.PastTime);
 
-        public IReadOnlyReactiveProperty<bool> Fire => input.Fire;
+        public IObservable<bool> Fire => input.Fire.CombineLatest(IsTimeUp, (fire, isTimeUp) => fire && !isTimeUp);
         public IReadOnlyReactiveProperty<bool> Sonar => input.Sonar;
         public IReadOnlyReactiveProperty<Vector2> Move => input.Move;
         public IReadOnlyReactiveProperty<Vector2> Aim => input.Aim;
@@ -40,13 +45,14 @@ namespace Dolphins
 
         public void AddScore(long score)
         {
-            this.score += score;
-            Debug.Log($"Current score {this.score}");
+            Score += score;
+            Debug.Log($"Current score {this.Score}");
         }
 
         void Update()
         {
             HappyTime -= Time.deltaTime;
+            PastTime += Time.deltaTime;
         }
 
         void OnTriggerEnter(Collider other)
