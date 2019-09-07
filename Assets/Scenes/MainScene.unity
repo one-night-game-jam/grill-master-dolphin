@@ -193,7 +193,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1e-45, y: 9.23e-43, z: 0, w: 54198270}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 1.0273856e+11}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -280,10 +280,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f061bebecebdf4585a52da7476396a5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fishPrefab: {fileID: 4747739892660779896, guid: 01a844201cd19b340a749dd338dc7aa2,
+  fishPrefab: {fileID: 299971350097498827, guid: dcd5cc62ab33e451694efaa8be06ff09,
     type: 3}
   initialFishCount: 30
-  fuguPrefab: {fileID: 5682862361153334873, guid: a2590946489084cd0bbc4d6e48c1e6bd,
+  fuguPrefab: {fileID: 7030349635387048697, guid: 2cd5d8755c1364b14adc61008a06a8ea,
     type: 3}
   initialFuguCount: 5
   spawnAreaRadius: 100
