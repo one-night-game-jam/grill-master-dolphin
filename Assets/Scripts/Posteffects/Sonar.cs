@@ -48,6 +48,8 @@ public class Sonar : MonoBehaviour
         float elapsedTime = Time.time - sonarStartTime;
         float sonarRadius = elapsedTime * sonarSpeed;
         material.SetFloat("_SonarRadius", sonarRadius);
+        material.SetVector("_SonarCenter", sonarCenter);
+
         material.SetFloat("_SonarWidth", sonarWidth);
         material.SetColor("_SonarColor", sonarColor);
         material.SetFloat("_SonarEffectiveRadius", sonarEffectiveRadius);
